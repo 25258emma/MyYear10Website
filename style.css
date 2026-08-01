@@ -1,0 +1,101 @@
+/* A simple css reset */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* The Font Family- Really important!! */
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* reset for images to ensure they ar 100% of the parent container width */
+img {
+    width: 100%;
+}
+/* Styling for the top menu bar- fixed to the top of the page */
+.top-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(34,34,59);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+} 
+.top-menu a {
+    font-size: 1.2em;
+    color: white; 
+    text-decoration: none; /* Removes the underline from links */
+    padding: 10px 15px;    /* Optional: Adds space around the links to make them easier to click */
+}
+
+/* The hero section styling- use your OWN Hero Image URL here */
+.hero {
+    background-image: url('images/Heading Banner.png');
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* BIG text styling for the hero section text */
+.hero-text {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+/* nice big font on a banner style background */
+.topic-title{
+    color: white;
+    font-size: 1.5em;
+    padding: 0.1em 2em;
+    background-color: rgb(37, 120, 115);
+}
+
+/* Three column grid with a nice big gap */
+.topic-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6em;
+    display: flex;
+    justify-content: center; 
+    /* bring the whole section in off the sides of the page */
+    width: 70%;
+    /* top margin of 3em and center right/left */
+    margin: 3em auto;
+}
+
+/* Styling for the individual topic cards rounded edges background color and a drop shadow */
+.topic-card{
+    background-color: rgb(183, 219, 217);
+    color: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the topic card titles */
+.topic-card-text{
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+    /* center align text */
+    text-align: center;
+}
+
+
+/* Styling for a footer section to take a bit of spcae at the bottom of the page */
+.footer{
+    background-color: rgb(182, 4, 4);
+    color: white;
+    text-align: right;
+    padding: 0.2em 0.2em;
+}
