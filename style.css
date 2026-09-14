@@ -31,7 +31,10 @@ img {
     color: white; 
     text-decoration: none; /* Removes the underline from links */
     padding: 10px 15px;    /* Optional: Adds space around the links to make them easier to click */
-}
+    transition: opacity 0.2s ease; /* Makes the color fade smoothly */}
+
+.top-menu a:hover {
+    opacity: 0.6;/}
 
 /* The hero section styling- use your OWN Hero Image URL here */
 .hero {
