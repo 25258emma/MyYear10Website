@@ -7,6 +7,7 @@ html {
     /* The Font Family- Really important!! */
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    background-color: rgb(183, 219, 217); 
 }
 
 /* reset for images to ensure they ar 100% of the parent container width */
@@ -27,14 +28,19 @@ img {
     z-index: 1000;
 } 
 .top-menu a {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: white; 
     text-decoration: none; /* Removes the underline from links */
     padding: 10px 15px;    /* Optional: Adds space around the links to make them easier to click */
-    transition: opacity 0.2s ease; /* Makes the color fade smoothly */}
+    transition: opacity 0.2s ease; /* Makes the color fade smoothly */
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+    font-style: italic; /* This gives it that slanted, cursive-style look */
+    font-weight: normal; 
+}
 
-.top-menu a:hover {
-    opacity: 0.6;/}
+.top-menu a:hover{
+    opacity: 0.6;/* Makes the link slightly transparent on hover */ 
+}
 
 /* The hero section styling- use your OWN Hero Image URL here */
 .hero {
@@ -61,7 +67,7 @@ img {
     color: white;
     font-size: 1.5em;
     padding: 0.1em 2em;
-    background-color: rgb(37, 120, 115);
+    background-color: rgb(52, 172, 164);
 }
 
 /* Three column grid with a nice big gap */
@@ -79,13 +85,14 @@ img {
 
 /* Styling for the individual topic cards rounded edges background color and a drop shadow */
 .topic-card{
-    background-color: rgb(183, 219, 217);
+    background-color: rgb(154, 192, 190);
     color: white;
     padding: 1em;
     border-radius: 0.5em;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
 }
 
+/* Styling for the topic card titles */
 /* Styling for the topic card titles */
 .topic-card-text{
     font-size: 1.5em;
@@ -93,6 +100,28 @@ img {
     /* center align text */
     text-align: center;
 }
+
+.problem-images{
+    background-color: rgb(183, 219, 217);
+    color: rgb(5, 5, 60);
+    padding: 1em;
+    border-radius: 0.5em;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;  /* Vertically centers the text alongside the image stack */
+    gap: 2em;             /* Adds a comfortable gap between text and images */
+}
+
+/* Styling for the problem content */   
+.problem-images p {
+    font-size: 1.5em; /* Change this value to adjust the size */
+    line-height: 1.2;   /* Keeps the spacing between lines comfortable to read */
+    flex: 1.2;            /* Gives the text slightly more width than the images */
+    margin: 0;
+    font-family: "Comic Sans MS", "Chalkboard SE", "Comic Neue", sans-serif;
+    font-style: italic; /* This gives it that slanted, cursive-style look */
+    font-weight: normal; 
+} 
 
 
 /* Styling for a footer section to take a bit of spcae at the bottom of the page */
